@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BiAlignRight } from "react-icons/bi";
 import { FaHome, FaImages } from "react-icons/fa";
 import { IoIosInformationCircle, IoIosSettings } from "react-icons/io";
+import Button from "../elemets/buttons/Button";
 
 const Navbar = () => {
   // state untuk menyimpan perubahan icon klick humbuger button
@@ -49,13 +50,13 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3">
               <IoIosInformationCircle className="text-3xl md:hidden block" />
-              <a href="#tentangKami" className="font-medium opacity-75">
+              <a href="#about" className="font-medium opacity-75">
                 Tentang Kami
               </a>
             </li>
             <li className="flex items-center gap-3">
               <IoIosSettings className="text-3xl md:hidden block" />
-              <a href="#layanan" className="font-medium opacity-75">
+              <a href="#services" className="font-medium opacity-75">
                 Layanan
               </a>
             </li>
@@ -67,12 +68,18 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="social flex items-center gap-2">
-            <a
-              href="#sosial"
+            {/* <a
+              href="#social"
               className="bg-sky-400 px-5 py-2 rounded-full text-white font-bold hover:bg-sky-500 transition-all"
             >
               Sosial Media
-            </a>
+            </a> */}
+            <Button
+              href="#social"
+              className="bg-sky-400 px-5 py-2 rounded-full text-white font-bold hover:bg-sky-500 transition-all"
+            >
+              Sosial Media
+            </Button>
             <i>
               <BiAlignRight
                 className="text-3xl md:hidden block"
