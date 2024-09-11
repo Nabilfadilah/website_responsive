@@ -1,9 +1,13 @@
+import Footer from "./components/layouts/Footer";
+import Navbar from "./components/layouts/Navbar";
+import HomePage from "./pages/HomePage";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-center bg-cyan-400">
-        Hello world!
-      </h1>
+      <Navbar />
+      <HomePage />
+      <Footer />
     </>
   );
 }
